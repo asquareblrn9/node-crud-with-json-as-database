@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+</head>
+    <body>
+        <div class="container mt-5">
+            
+            <div class="row mt-5">
+
+                <div class="col-md-8 m-auto">
+                    <div class="card">
+                        <div class="card-header bg-danger text-white">
+                            <h4 class="card-title">Edit Blog</h4>
+                            </div>
+                            <div class="card-body">
+                    <form method="post" id="update_user"> 
+                        <div class="form-group mt-3" >
+                            <label>Id</label>
+                            <input type="text" class="form-control" name="id" readonly value="<%= id %>" required />
+                         </div>
+
+                         <div class="form-group mt-3" >
+                             <label>Description</label>
+                            <input type="text" class="form-control" name="description"  value="<%= description %>"  required />
+                         </div>
+
+                        <div class="form-group mt-3" >
+                            <label>Post</label>
+                       <input type="text" class="form-control" name="title"  value="<%= title %>" placeholder="Post Title" required />
+                    </div>
+
+                    <div class="form-group mt-3" >
+                        <textarea name="blog" class="form-control" required> <%= blog %>"</textarea>
+                    </div>
+                    <div class="form-group mt-3" >
+                        <button type="submit" class="btn btn-primary">Update Post</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
